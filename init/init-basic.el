@@ -10,4 +10,7 @@
 (recentf-mode 1)
 (setq recentf-max-menu-item 10)
 
+;; Suggest the other Dired window's directory when copying or moving files.
+(setq dired-dwim-target t)
+(setq ring-bell-function 'ignore)
 (provide 'init-basic)

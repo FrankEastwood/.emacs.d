@@ -1,4 +1,4 @@
-(require 'package)
+x(require 'package)
 (setq package-archives
       '(("melpa" . "https://melpa.org/packages/")
 	("gnu" . "https://elpa.gnu.org/packages/")
@@ -16,6 +16,19 @@
 
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
-(setq use-package-always-defer t)
+
+;; Install packages and expose their commands for loading on first use.
+(use-package magit
+  :ensure t
+  :commands (magit-status magit-log-current))
+
+(use-package move-text
+  :ensure t
+  :commands (move-text-up move-text-down))
+
+(use-package multiple-cursors
+  :ensure t
+  :commands (mc/edit-lines mc/mark-next-like-this
+             mc/mark-previous-like-this mc/mark-all-like-this))
 
 (provide 'init-packages)
