@@ -24,6 +24,9 @@
 ;; duplicate line
 (global-set-key (kbd "C-c d") #'duplicate-line)
 
+;; set mark
+(global-set-key (kbd "C-.") #'set-mark-command)
+
 ;; forbiden C-left mouse
 (global-set-key (kbd "C-<down-mouse-1>") 'ignore)
 (provide 'init-keybindings)
