@@ -39,6 +39,7 @@ C-x C-b (list the buffer)
 C-x b (switch to buffer)
 C-x k (kill buffer)
 C-x s (save buffer)
+C-x C-q (clear read-only flags)
 
 * eXtend Command
 C-x Character
@@ -61,7 +62,7 @@ C-r (search earlier text)
 * Multiple Windows
 C-x 2 (splits into two windows)
 C-M-v (scroll the bottom windows)
-C-M-S-v (scroll
+C-M-S-v (scroll)
 C-x o (move cursor to other windows)
 C-x 0 (close current window)
 C-x 1 (close other window but this)

@@ -2,7 +2,7 @@
 (electric-pair-mode t)
 (show-paren-mode t)
 (delete-selection-mode t)
-
+(defalias 'list-buffers 'ibuffer) ;;make ibuffer default
 ;; don't create such file init.el~
 (setq make-backup-files nil)
 
